@@ -44,17 +44,8 @@ public class UserAdapter extends ArrayAdapter<Users> {
         TextView userProfile = (TextView) listItemView.findViewById(R.id.user_name);
         userProfile.setText(currentUser.getmUser());
 
+
         return listItemView;
     }
 
-    public static Drawable LoadImageFromWebOperations(String url) {
-        try {
-            InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
-            return d;
-        } catch (Exception e) {
-            return null;
-        }
-
-    }
 }

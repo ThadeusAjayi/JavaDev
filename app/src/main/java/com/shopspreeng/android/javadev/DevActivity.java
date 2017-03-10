@@ -1,15 +1,20 @@
 package com.shopspreeng.android.javadev;
 
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Parcelable;
 import android.support.annotation.MainThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -26,6 +31,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 import static com.shopspreeng.android.javadev.R.string.url;
 
 public class DevActivity extends AppCompatActivity {
@@ -42,15 +48,8 @@ public class DevActivity extends AppCompatActivity {
         UserAsyncTask task = new UserAsyncTask();
         task.execute();
 
-        // Set the adapter on the {@link ListView}
-        // so the git_user_list can be populated in the user interface
     }
 
-    private static String username;
-
-    private static String userImg;
-
-    private static String userUrl;
 
     private static final String USERS_REQUEST_URL = "https://api.github.com/search/users?q=location:lagos+language:java";
 
@@ -177,6 +176,26 @@ public class DevActivity extends AppCompatActivity {
             adapter = new UserAdapter(DevActivity.this, userDisplay);
 
             userListView.setAdapter(adapter);
+
+            userListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                Users currentUser;
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    currentUser = adapter.getItem(i);
+                    String PNAME = currentUser.getmUser();
+              //      String PIMG = currentUser.getmResource();
+                    String PURL = currentUser.getmUrl();
+
+
+                    Intent profileIntent = new Intent(DevActivity.this,UserProfile.class);
+                    profileIntent.putExtra("profileName", PNAME);
+                  //  profileIntent.putExtra("Image", (BitmapDrawable)PIMG);
+                    profileIntent.putExtra("profileUrl", PURL);
+                    startActivity(profileIntent);
+
+                }
+            });
+
 
         }
 

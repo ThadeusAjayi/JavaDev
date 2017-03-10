@@ -29,7 +29,6 @@
         android:textAllCaps="true"
         android:textColor="@color/textColorEarthquakeDetails"
         android:layout_height="wrap_content"
-        android:id="@+id/user_name"
-        android:onClick="details"/>
+        android:id="@+id/user_name"/>
 
 </LinearLayout>
