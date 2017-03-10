@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/m_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Thadeus Ajayi"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:fontFamily="casual"
+        android:textSize="@dimen/font_size"
+        android:textStyle="bold"
+        android:textColor="@color/magnitude6"/>
+
+    <ImageView
+        android:id="@+id/m_user_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/m_user_url"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/url"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="@dimen/font_size"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"/>
+
+
+
+</LinearLayout>

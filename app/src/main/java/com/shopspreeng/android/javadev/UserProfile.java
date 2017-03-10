@@ -24,6 +24,5 @@ public class UserProfile extends AppCompatActivity {
         TextView mUserUrl = (TextView) findViewById(R.id.m_user_url);
 
 
-
     }
 }

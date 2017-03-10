@@ -1,5 +1,6 @@
 package com.shopspreeng.android.javadev;
 
+import android.Manifest;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
@@ -38,10 +39,7 @@ public class UserAdapter extends ArrayAdapter<Users> {
         }
 
         ImageView userImage = (ImageView) listItemView.findViewById(R.id.user_img);
-
-        String imageUrl = currentUser.getmResource();
-
-        userImage.setImageDrawable(LoadImageFromWebOperations(imageUrl));
+        userImage.setImageDrawable(currentUser.getmResource());
 
         TextView userProfile = (TextView) listItemView.findViewById(R.id.user_name);
         userProfile.setText(currentUser.getmUser());
@@ -57,5 +55,6 @@ public class UserAdapter extends ArrayAdapter<Users> {
         } catch (Exception e) {
             return null;
         }
+
     }
 }

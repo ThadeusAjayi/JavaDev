@@ -1,5 +1,7 @@
 package com.shopspreeng.android.javadev;
 
+import android.graphics.drawable.Drawable;
+
 /**
  * Created by jayson surface on 09/03/2017.
  */
@@ -8,11 +10,11 @@ public class Users {
 
     private String mUser;
 
-    private String mResource;
+    private Drawable mResource;
 
     private String mUrl;
 
-    public Users(String user, String resource, String url){
+    public Users(String user, Drawable resource, String url){
         mUser = user;
         mResource = resource;
         mUrl = url;
@@ -22,7 +24,7 @@ public class Users {
         return mUser;
     }
 
-    public String getmResource(){
+    public Drawable getmResource(){
         return mResource;
     }
 
