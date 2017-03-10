@@ -24,6 +24,9 @@ public class UserProfile extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.gitimg);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.git_user_profile);
 
         DevActivity user = new DevActivity();
