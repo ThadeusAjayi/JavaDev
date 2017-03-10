@@ -1,6 +1,10 @@
 package com.shopspreeng.android.javadev;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
@@ -10,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -22,6 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -94,10 +100,10 @@ public class DevActivity extends AppCompatActivity {
         return jsonResponse;
     }
 
-    public static Drawable LoadImageFromWebOperations(String url) {
+    public static Bitmap LoadImageFromWebOperations(String url) {
         try {
             InputStream is = (InputStream) new URL(url).getContent();
-            Drawable d = Drawable.createFromStream(is, "src name");
+            Bitmap d = BitmapFactory.decodeStream(is);
             return d;
         } catch (Exception e) {
             return null;
@@ -121,7 +127,7 @@ public class DevActivity extends AppCompatActivity {
 
                 String username = itemsObject.getString("login");
 
-                Drawable userImg = LoadImageFromWebOperations(itemsObject.getString("avatar_url"));
+                Bitmap userImg = LoadImageFromWebOperations(itemsObject.getString("avatar_url"));
 
                 String url = itemsObject.getString("html_url");
 
@@ -133,7 +139,6 @@ public class DevActivity extends AppCompatActivity {
             Log.e("JSON extraction", "Problem parsing the earthquake JSON results", e);
         }
 
-        Log.v("userArrayList size", ""+userArrayList.size());
         return userArrayList;
     }
 
@@ -154,7 +159,6 @@ public class DevActivity extends AppCompatActivity {
 
             // Extract relevant fields from the JSON response and create an {@link Event} object
             ArrayList<Users> user = extractUsersFromJson(jsonResponse);
-            Log.v("compare to UAL", ""+user.size());
 
             // Return the {@link Event} object as the result fo the {@link TsunamiAsyncTask}
             return user;
@@ -167,6 +171,7 @@ public class DevActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(ArrayList<Users> userSelect) {
             super.onPostExecute(userSelect);
+      //      findViewById(R.id.loadingPanel).setVisibility(View.GONE);
 
             final ArrayList<Users> userDisplay = userSelect;
 
@@ -177,27 +182,34 @@ public class DevActivity extends AppCompatActivity {
 
             userListView.setAdapter(adapter);
 
+
             userListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 Users currentUser;
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     currentUser = adapter.getItem(i);
                     String PNAME = currentUser.getmUser();
-              //      String PIMG = currentUser.getmResource();
+                    Bitmap PIMG = currentUser.getmResource();
                     String PURL = currentUser.getmUrl();
+
 
 
                     Intent profileIntent = new Intent(DevActivity.this,UserProfile.class);
                     profileIntent.putExtra("profileName", PNAME);
-                  //  profileIntent.putExtra("Image", (BitmapDrawable)PIMG);
+
+                    ByteArrayOutputStream _bs = new ByteArrayOutputStream();
+                    PIMG.compress(Bitmap.CompressFormat.PNG, 50, _bs);
+                    profileIntent.putExtra("byteArray", _bs.toByteArray());
+
                     profileIntent.putExtra("profileUrl", PURL);
                     startActivity(profileIntent);
 
                 }
             });
 
-
         }
+
+
 
         /**
          * Returns new URL object from the given string URL.

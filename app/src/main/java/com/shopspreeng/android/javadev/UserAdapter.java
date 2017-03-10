@@ -39,7 +39,7 @@ public class UserAdapter extends ArrayAdapter<Users> {
         }
 
         ImageView userImage = (ImageView) listItemView.findViewById(R.id.user_img);
-        userImage.setImageDrawable(currentUser.getmResource());
+        userImage.setImageBitmap(currentUser.getmResource());
 
         TextView userProfile = (TextView) listItemView.findViewById(R.id.user_name);
         userProfile.setText(currentUser.getmUser());

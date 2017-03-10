@@ -1,5 +1,7 @@
 package com.shopspreeng.android.javadev;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
 /**
@@ -10,11 +12,11 @@ public class Users {
 
     private String mUser;
 
-    private Drawable mResource;
+    private Bitmap mResource;
 
     private String mUrl;
 
-    public Users(String user, Drawable resource, String url){
+    public Users(String user, Bitmap resource, String url){
         mUser = user;
         mResource = resource;
         mUrl = url;
@@ -24,7 +26,7 @@ public class Users {
         return mUser;
     }
 
-    public Drawable getmResource(){
+    public Bitmap getmResource(){
         return mResource;
     }
 
