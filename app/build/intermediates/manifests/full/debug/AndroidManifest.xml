@@ -12,7 +12,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/gitimg"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -20,19 +20,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <data android:mimeType="image/*" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.shopspreeng.android.javadev.UserProfile" >
+        <activity
+            android:name="com.shopspreeng.android.javadev.UserProfile"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <data android:mimeType="image/*" />
-                <data android:mimeType="text/plain" />
-
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
     </application>

@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\jayson surface\\JavaDev\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\gitimg.png",
+        "source": "C:\\Users\\jayson surface\\JavaDev\\app\\src\\main\\res\\mipmap-mdpi\\gitimg.png"
     }
 ]
