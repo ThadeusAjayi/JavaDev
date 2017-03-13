@@ -52,7 +52,7 @@ public class DevActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.gitimg);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        setContentView(R.layout.activity_dev);
+        setContentView(R.layout.loading_image);
 
         UserAsyncTask task = new UserAsyncTask();
         task.execute();
@@ -76,6 +76,7 @@ public class DevActivity extends AppCompatActivity {
         }
         return output.toString();
     }
+
 
     private String makeHttpRequest(URL url) throws IOException {
         String jsonResponse = "";
@@ -173,8 +174,10 @@ public class DevActivity extends AppCompatActivity {
 */
         @Override
         protected void onPostExecute(ArrayList<Users> userSelect) {
-            super.onPostExecute(userSelect);
-      //      findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+            setContentView(R.layout.activity_dev);
+            if(userSelect == null) {
+                findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+            }
 
             final ArrayList<Users> userDisplay = userSelect;
 
@@ -211,7 +214,6 @@ public class DevActivity extends AppCompatActivity {
             });
 
         }
-
 
 
         /**

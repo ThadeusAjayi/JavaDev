@@ -1,10 +1,10 @@
 [
     {
         "merged": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "source": "C:\\Users\\jayson surface\\.android\\build-cache\\a84394c117eb46c7dc0e8ed21642e0f42a2f6341\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\jayson surface\\JavaDev\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "source": "C:\\Users\\jayson surface\\.android\\build-cache\\a84394c117eb46c7dc0e8ed21642e0f42a2f6341\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

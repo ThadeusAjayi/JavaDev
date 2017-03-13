@@ -19,15 +19,15 @@ ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:4:5-
 		ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\.android\build-cache\a84394c117eb46c7dc0e8ed21642e0f42a2f6341\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\jayson surface\.android\build-cache\179a7148308d44bd43aa616ef16298a2190768d5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\jayson surface\.android\build-cache\d2d379f0a5b9e611fd891c705a45e4f4f72741d5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\jayson surface\.android\build-cache\ae99b6567c091c72778f4345489e6cdd58d0be5c\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\jayson surface\.android\build-cache\408808648e8c1316758360b8beb07baf30125f35\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\jayson surface\.android\build-cache\ef6d1cf13a875a3477ee8039cea75177ab615422\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\jayson surface\.android\build-cache\a1225ecf6ff0684756755a78bf266a8cfa9cddf4\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\jayson surface\.android\build-cache\723c2c2e5c97dfd03e699d98f8308f3fa933d3e1\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\jayson surface\.android\build-cache\0eb70bf06c5f94a7f69757dccf7bf03ffd1a7b7b\output\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:9:9-41
 	android:supportsRtl
@@ -66,17 +66,17 @@ ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:21:1
 		ADDED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml:21:25-66
 uses-sdk
 INJECTED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\.android\build-cache\a84394c117eb46c7dc0e8ed21642e0f42a2f6341\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\jayson surface\.android\build-cache\179a7148308d44bd43aa616ef16298a2190768d5\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\jayson surface\.android\build-cache\d2d379f0a5b9e611fd891c705a45e4f4f72741d5\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\jayson surface\.android\build-cache\ae99b6567c091c72778f4345489e6cdd58d0be5c\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\jayson surface\.android\build-cache\408808648e8c1316758360b8beb07baf30125f35\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\jayson surface\.android\build-cache\ef6d1cf13a875a3477ee8039cea75177ab615422\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\jayson surface\.android\build-cache\a1225ecf6ff0684756755a78bf266a8cfa9cddf4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\jayson surface\.android\build-cache\723c2c2e5c97dfd03e699d98f8308f3fa933d3e1\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\jayson surface\.android\build-cache\0eb70bf06c5f94a7f69757dccf7bf03ffd1a7b7b\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\JavaDev\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\jayson surface\.android\build-cache\a84394c117eb46c7dc0e8ed21642e0f42a2f6341\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\jayson surface\JavaDev\app\src\main\AndroidManifest.xml
